@@ -43,7 +43,7 @@ class SplashScene:
     def __init__(self, cur_circle, ui_batch):
         self.cur_circle = cur_circle
         self.ui_batch = ui_batch
-        self.splashImg = pyglet.resource.image('splash.jpg')
+        self.splashImg = pyglet.resource.image('res/splash.jpg')
 
     def set_scene(self, scene_name):
         self.manager.set_scene(scene_name)
@@ -99,9 +99,9 @@ class MenuScene:
                                     color=(0, 200, 0),
                                     batch=self.button_batch)
 
-        self.t_but_img = pyglet.resource.image('T_ButtonImg.jpg')
-        self.c_but_img = pyglet.resource.image('C_ButtonImg.jpg')
-        self.q_but_img = pyglet.resource.image('Q_ButtonImg.jpg')
+        self.t_but_img = pyglet.resource.image('res/T_ButtonImg.jpg')
+        self.c_but_img = pyglet.resource.image('res/C_ButtonImg.jpg')
+        self.q_but_img = pyglet.resource.image('res/Q_ButtonImg.jpg')
 
         self.t_but_sprite = pyglet.sprite.Sprite(img=self.t_but_img,
                                                  x=self.manager.window.width/2 - 100,
